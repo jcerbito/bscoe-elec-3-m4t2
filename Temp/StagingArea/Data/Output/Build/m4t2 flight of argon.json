@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "m4t2 flight of argon.data.unityweb",
+"asmCodeUrl": "m4t2 flight of argon.asm.code.unityweb",
+"asmMemoryUrl": "m4t2 flight of argon.asm.memory.unityweb",
+"asmFrameworkUrl": "m4t2 flight of argon.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
