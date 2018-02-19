@@ -413,9 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767ecbd7ee0f5794586fad1297cc64e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  rotSpeed: 2
-  roll: 2
+  speed: 10
+  roll: 5
   pitch: 2
   yaw: 0
 --- !u!54 &77262200
@@ -431,7 +430,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!1001 &95264774
 Prefab:
@@ -856,7 +855,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 183256356}
   m_LocalRotation: {x: 0.12892644, y: -0, z: -0, w: 0.99165416}
-  m_LocalPosition: {x: 80.27, y: 18.38, z: 64.11}
+  m_LocalPosition: {x: 80.27, y: 18.38, z: 55.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4886458}
@@ -2502,11 +2501,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 90de326af62a75d43bcaff3421969121, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6503425
+      value: -0.5254679
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 90de326af62a75d43bcaff3421969121, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.4832196
+      value: 14.516963
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 90de326af62a75d43bcaff3421969121, type: 3}
       propertyPath: m_LocalRotation.x

@@ -2,7 +2,7 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2499
+  Total Type Removals = 2500
     Nested = 158
     Interfaces = 172
     Abstract Classes = 181
@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 178
   Total Field Removals = 791
-  Total Method Removals = 10819
+  Total Method Removals = 10830
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -9442,7 +9442,7 @@ Summary:
 Assembly: UnityEngine
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 851
+  Total Type Removals = 852
     Nested = 21
     Interfaces = 34
     Abstract Classes = 52
@@ -9451,7 +9451,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 49
   Total Field Removals = 53
-  Total Method Removals = 4497
+  Total Method Removals = 4508
   References Removed = 0
 ---------------------------------------------------
     AOT.MonoPInvokeCallbackAttribute
@@ -10388,7 +10388,9 @@ Summary:
         INTERNAL_CALL_SetStereoViewMatrix(UnityEngine.Camera,UnityEngine.Camera/StereoscopicEye,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_ViewportPointToRay(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Ray&)
         INTERNAL_CALL_ViewportToScreenPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
+        INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_WorldToScreenPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
+        INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_get_backgroundColor(UnityEngine.Color&)
         INTERNAL_get_cameraToWorldMatrix(UnityEngine.Matrix4x4&)
         INTERNAL_get_cullingMatrix(UnityEngine.Matrix4x4&)
@@ -10487,7 +10489,9 @@ Summary:
         SetupCurrent(UnityEngine.Camera)
         ViewportPointToRay(UnityEngine.Vector3)
         ViewportToScreenPoint(UnityEngine.Vector3)
+        ViewportToWorldPoint(UnityEngine.Vector3)
         WorldToScreenPoint(UnityEngine.Vector3)
+        WorldToViewportPoint(UnityEngine.Vector3)
     UnityEngine.Camera/MonoOrStereoscopicEye
     UnityEngine.Camera/StereoscopicEye
     UnityEngine.CameraType
@@ -13272,6 +13276,7 @@ Summary:
         Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LerpUnclamped(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+        op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
         RotateTowards(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         Set(System.Single,System.Single,System.Single,System.Single)
         set_eulerAngles(UnityEngine.Vector3)
@@ -14159,6 +14164,7 @@ Summary:
         IDToName(System.Int32)
         IsValid(System.Int32)
         NameToID(System.String)
+    UnityEngine.Space
     UnityEngine.SparseTexture
     UnityEngine.SpeedTreeWindAsset
     UnityEngine.SplatPrototype
@@ -14776,6 +14782,7 @@ Summary:
         INTERNAL_CALL_RotateAroundLocal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
         INTERNAL_CALL_SetLocalEulerAngles(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.RotationOrder)
         INTERNAL_CALL_SetPositionAndRotation(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+        INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_TransformVector(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)
         INTERNAL_get_lossyScale(UnityEngine.Vector3&)
@@ -14789,9 +14796,11 @@ Summary:
         LookAt(UnityEngine.Vector3)
         LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
         Rotate(System.Single,System.Single,System.Single)
+        Rotate(System.Single,System.Single,System.Single,UnityEngine.Space)
         Rotate(UnityEngine.Vector3)
         Rotate(UnityEngine.Vector3,System.Single)
         Rotate(UnityEngine.Vector3,System.Single,UnityEngine.Space)
+        Rotate(UnityEngine.Vector3,UnityEngine.Space)
         RotateAround(UnityEngine.Vector3,System.Single)
         RotateAround(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         RotateAroundInternal(UnityEngine.Vector3,System.Single)
@@ -14810,12 +14819,15 @@ Summary:
         SetPositionAndRotation(UnityEngine.Vector3,UnityEngine.Quaternion)
         SetSiblingIndex(System.Int32)
         TransformDirection(System.Single,System.Single,System.Single)
+        TransformDirection(UnityEngine.Vector3)
         TransformPoint(System.Single,System.Single,System.Single)
         TransformVector(System.Single,System.Single,System.Single)
         TransformVector(UnityEngine.Vector3)
         Translate(System.Single,System.Single,System.Single)
         Translate(System.Single,System.Single,System.Single,UnityEngine.Space)
         Translate(System.Single,System.Single,System.Single,UnityEngine.Transform)
+        Translate(UnityEngine.Vector3)
+        Translate(UnityEngine.Vector3,UnityEngine.Space)
         Translate(UnityEngine.Vector3,UnityEngine.Transform)
     UnityEngine.TransitionType
     UnityEngine.TransparencySortMode

@@ -1,63 +1,54 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour {
 
-	public float speed;
-	public float rotSpeed;
-
-
-	float rangeX = 3.0f;
-
-
-	public float roll = 0.0f;
-	public float pitch = 0.0f;
-	public float yaw = 0.0f;
-
-
-
+    float xThrow;
+	float yThrow;
+	
+	[SerializeField] float speed = 20f;
+    [SerializeField] float maxRangeX = 7f;
+    [SerializeField] float maxRangeY = 6f;
+    [SerializeField] float posPitch = -3f;
+    [SerializeField] float conPitch = -15f;
+    [SerializeField] float posYaw = 3f;
+    [SerializeField] float conRoll = -18f;
 	
 	void Start () {
 		
 	}
 	
-	
-	void Update () {
-	
-		float xThrow = CrossPlatformInputManager.GetAxis("Horizontal") * Time.deltaTime * speed;
-		float yThrow = CrossPlatformInputManager.GetAxis("Vertical") * Time.deltaTime * speed;
-		
-		transform.Translate(new Vector3(xThrow, yThrow, 0));
+	void Update ()
+    {
+        xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+
+		float xThrowPos = xThrow * speed * Time.deltaTime;
+		float yThrowPos = yThrow * speed * Time.deltaTime;
 
 
-		if(Input.GetButtonDown("Horizontal") && Input.GetAxisRaw("Horizontal") < 0) {
-		 transform.Rotate(0f, 0f, roll * rotSpeed, Space.Self);
-		}else if(Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical") < 0) {
-           transform.Rotate(pitch * rotSpeed , 0f, 0f, Space.Self);
-		}else if(Input.GetButtonDown("Horizontal") && Input.GetAxisRaw("Horizontal") > 0) {
-          transform.Rotate(0f, 0f, -roll * rotSpeed,  Space.Self);
-		}else if(Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical") > 0) {
-           transform.Rotate(-pitch * rotSpeed , 0f, 0f, Space.Self);
-		}
+        float posXLoc = transform.localPosition.x + xThrowPos;
+        float posXClamped = Mathf.Clamp(posXLoc, -maxRangeX, maxRangeX);
 
+        float posYLoc = transform.localPosition.y + yThrowPos;
+        float posYClamped = Mathf.Clamp(posYLoc, -maxRangeY, maxRangeY);
 
- 
-		onScreenOnly();
-	
-	}
+        transform.localPosition = new Vector3(posXClamped, posYClamped, transform.localPosition.z);
+       
+	   PitchRawRoll();
+    }
 
-	void onScreenOnly(){
-		 Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
-         pos.x = Mathf.Clamp01(pos.x);
-         pos.y = Mathf.Clamp01(pos.y);
-         transform.position = Camera.main.ViewportToWorldPoint(pos);
-	}
+    private void PitchRawRoll()
+    {
+       
+		float pitch = (transform.localPosition.y * posPitch) + (yThrow * conPitch);
+        float yaw = transform.localPosition.x * posYaw;
+        float roll = xThrow * conRoll;
 
-	
-
-
-
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
 
 }

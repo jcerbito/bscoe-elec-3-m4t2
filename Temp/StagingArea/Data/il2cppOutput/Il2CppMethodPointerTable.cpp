@@ -7915,10 +7915,6 @@ extern "C" void Camera_INTERNAL_get_pixelRect_m1785951490 ();
 extern "C" void Camera_get_targetTexture_m705925974 ();
 extern "C" void Camera_get_clearFlags_m1743144302 ();
 extern "C" void Camera_get_targetDisplay_m835278314 ();
-extern "C" void Camera_WorldToViewportPoint_m1897251752 ();
-extern "C" void Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772 ();
-extern "C" void Camera_ViewportToWorldPoint_m3841010930 ();
-extern "C" void Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934 ();
 extern "C" void Camera_ScreenToViewportPoint_m2666228286 ();
 extern "C" void Camera_INTERNAL_CALL_ScreenToViewportPoint_m529506484 ();
 extern "C" void Camera_ScreenPointToRay_m614889538 ();
@@ -8975,7 +8971,6 @@ extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
 extern "C" void Quaternion_Euler_m2887458175 ();
 extern "C" void Quaternion_Internal_FromEulerRad_m1121344272 ();
 extern "C" void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 ();
-extern "C" void Quaternion_op_Multiply_m2426727589 ();
 extern "C" void Quaternion_op_Multiply_m1483423721 ();
 extern "C" void Quaternion_op_Equality_m2308156925 ();
 extern "C" void Quaternion_op_Inequality_m3629786166 ();
@@ -9318,12 +9313,6 @@ extern "C" void Transform_SetParent_m4124909910 ();
 extern "C" void Transform_SetParent_m1963830867 ();
 extern "C" void Transform_get_worldToLocalMatrix_m3299477436 ();
 extern "C" void Transform_INTERNAL_get_worldToLocalMatrix_m3394773201 ();
-extern "C" void Transform_Translate_m3316827744 ();
-extern "C" void Transform_Translate_m423862381 ();
-extern "C" void Transform_Rotate_m2612876682 ();
-extern "C" void Transform_Rotate_m2449860094 ();
-extern "C" void Transform_TransformDirection_m1639585047 ();
-extern "C" void Transform_INTERNAL_CALL_TransformDirection_m2899991790 ();
 extern "C" void Transform_TransformPoint_m3272254198 ();
 extern "C" void Transform_INTERNAL_CALL_TransformPoint_m4114689647 ();
 extern "C" void Transform_InverseTransformPoint_m2648491174 ();
@@ -10913,7 +10902,7 @@ extern "C" void LoadScene_Update_m693075186 ();
 extern "C" void Player__ctor_m1986401168 ();
 extern "C" void Player_Start_m3139373552 ();
 extern "C" void Player_Update_m717746161 ();
-extern "C" void Player_onScreenOnly_m789330477 ();
+extern "C" void Player_PitchRawRoll_m1833245755 ();
 extern "C" void AxisTouchButton__ctor_m829151079 ();
 extern "C" void AxisTouchButton_OnEnable_m1015408131 ();
 extern "C" void AxisTouchButton_FindPairedButton_m1042977779 ();
@@ -11073,7 +11062,7 @@ extern "C" void WaypointProgressTracker_OnDrawGizmos_m1674029918 ();
 extern "C" void ScrollUV__ctor_m4170097832 ();
 extern "C" void ScrollUV_Update_m1167004397 ();
 extern "C" void ScrollUV_Main_m3824552235 ();
-extern const Il2CppMethodPointer g_MethodPointers[11056] = 
+extern const Il2CppMethodPointer g_MethodPointers[11045] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -18973,10 +18962,6 @@ extern const Il2CppMethodPointer g_MethodPointers[11056] =
 	Camera_get_targetTexture_m705925974,
 	Camera_get_clearFlags_m1743144302,
 	Camera_get_targetDisplay_m835278314,
-	Camera_WorldToViewportPoint_m1897251752,
-	Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772,
-	Camera_ViewportToWorldPoint_m3841010930,
-	Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934,
 	Camera_ScreenToViewportPoint_m2666228286,
 	Camera_INTERNAL_CALL_ScreenToViewportPoint_m529506484,
 	Camera_ScreenPointToRay_m614889538,
@@ -20033,7 +20018,6 @@ extern const Il2CppMethodPointer g_MethodPointers[11056] =
 	Quaternion_Euler_m2887458175,
 	Quaternion_Internal_FromEulerRad_m1121344272,
 	Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132,
-	Quaternion_op_Multiply_m2426727589,
 	Quaternion_op_Multiply_m1483423721,
 	Quaternion_op_Equality_m2308156925,
 	Quaternion_op_Inequality_m3629786166,
@@ -20376,12 +20360,6 @@ extern const Il2CppMethodPointer g_MethodPointers[11056] =
 	Transform_SetParent_m1963830867,
 	Transform_get_worldToLocalMatrix_m3299477436,
 	Transform_INTERNAL_get_worldToLocalMatrix_m3394773201,
-	Transform_Translate_m3316827744,
-	Transform_Translate_m423862381,
-	Transform_Rotate_m2612876682,
-	Transform_Rotate_m2449860094,
-	Transform_TransformDirection_m1639585047,
-	Transform_INTERNAL_CALL_TransformDirection_m2899991790,
 	Transform_TransformPoint_m3272254198,
 	Transform_INTERNAL_CALL_TransformPoint_m4114689647,
 	Transform_InverseTransformPoint_m2648491174,
@@ -21971,7 +21949,7 @@ extern const Il2CppMethodPointer g_MethodPointers[11056] =
 	Player__ctor_m1986401168,
 	Player_Start_m3139373552,
 	Player_Update_m717746161,
-	Player_onScreenOnly_m789330477,
+	Player_PitchRawRoll_m1833245755,
 	AxisTouchButton__ctor_m829151079,
 	AxisTouchButton_OnEnable_m1015408131,
 	AxisTouchButton_FindPairedButton_m1042977779,

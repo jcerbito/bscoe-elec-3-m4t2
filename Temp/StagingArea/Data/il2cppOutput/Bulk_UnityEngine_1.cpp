@@ -31276,57 +31276,6 @@ extern "C"  void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 (Run
 	_il2cpp_icall_func = (Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Quaternion::INTERNAL_CALL_Internal_FromEulerRad(UnityEngine.Vector3&,UnityEngine.Quaternion&)");
 	_il2cpp_icall_func(___euler0, ___value1);
 }
-// UnityEngine.Quaternion UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
-extern "C"  Quaternion_t4030073918  Quaternion_op_Multiply_m2426727589 (RuntimeObject * __this /* static, unused */, Quaternion_t4030073918  ___lhs0, Quaternion_t4030073918  ___rhs1, const RuntimeMethod* method)
-{
-	Quaternion_t4030073918  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		float L_0 = (&___lhs0)->get_w_3();
-		float L_1 = (&___rhs1)->get_x_0();
-		float L_2 = (&___lhs0)->get_x_0();
-		float L_3 = (&___rhs1)->get_w_3();
-		float L_4 = (&___lhs0)->get_y_1();
-		float L_5 = (&___rhs1)->get_z_2();
-		float L_6 = (&___lhs0)->get_z_2();
-		float L_7 = (&___rhs1)->get_y_1();
-		float L_8 = (&___lhs0)->get_w_3();
-		float L_9 = (&___rhs1)->get_y_1();
-		float L_10 = (&___lhs0)->get_y_1();
-		float L_11 = (&___rhs1)->get_w_3();
-		float L_12 = (&___lhs0)->get_z_2();
-		float L_13 = (&___rhs1)->get_x_0();
-		float L_14 = (&___lhs0)->get_x_0();
-		float L_15 = (&___rhs1)->get_z_2();
-		float L_16 = (&___lhs0)->get_w_3();
-		float L_17 = (&___rhs1)->get_z_2();
-		float L_18 = (&___lhs0)->get_z_2();
-		float L_19 = (&___rhs1)->get_w_3();
-		float L_20 = (&___lhs0)->get_x_0();
-		float L_21 = (&___rhs1)->get_y_1();
-		float L_22 = (&___lhs0)->get_y_1();
-		float L_23 = (&___rhs1)->get_x_0();
-		float L_24 = (&___lhs0)->get_w_3();
-		float L_25 = (&___rhs1)->get_w_3();
-		float L_26 = (&___lhs0)->get_x_0();
-		float L_27 = (&___rhs1)->get_x_0();
-		float L_28 = (&___lhs0)->get_y_1();
-		float L_29 = (&___rhs1)->get_y_1();
-		float L_30 = (&___lhs0)->get_z_2();
-		float L_31 = (&___rhs1)->get_z_2();
-		Quaternion_t4030073918  L_32;
-		memset(&L_32, 0, sizeof(L_32));
-		Quaternion__ctor_m3196903881((&L_32), ((float)((float)((float)((float)((float)((float)((float)((float)L_0*(float)L_1))+(float)((float)((float)L_2*(float)L_3))))+(float)((float)((float)L_4*(float)L_5))))-(float)((float)((float)L_6*(float)L_7)))), ((float)((float)((float)((float)((float)((float)((float)((float)L_8*(float)L_9))+(float)((float)((float)L_10*(float)L_11))))+(float)((float)((float)L_12*(float)L_13))))-(float)((float)((float)L_14*(float)L_15)))), ((float)((float)((float)((float)((float)((float)((float)((float)L_16*(float)L_17))+(float)((float)((float)L_18*(float)L_19))))+(float)((float)((float)L_20*(float)L_21))))-(float)((float)((float)L_22*(float)L_23)))), ((float)((float)((float)((float)((float)((float)((float)((float)L_24*(float)L_25))-(float)((float)((float)L_26*(float)L_27))))-(float)((float)((float)L_28*(float)L_29))))-(float)((float)((float)L_30*(float)L_31)))), /*hidden argument*/NULL);
-		V_0 = L_32;
-		goto IL_0108;
-	}
-
-IL_0108:
-	{
-		Quaternion_t4030073918  L_33 = V_0;
-		return L_33;
-	}
-}
 // UnityEngine.Vector3 UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Vector3)
 extern "C"  Vector3_t2243707580  Quaternion_op_Multiply_m1483423721 (RuntimeObject * __this /* static, unused */, Quaternion_t4030073918  ___rotation0, Vector3_t2243707580  ___point1, const RuntimeMethod* method)
 {

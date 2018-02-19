@@ -10432,10 +10432,6 @@ extern "C"  Vector3_t2243707580  BoxCollider_get_size_m201254358 (BoxCollider_t2
 extern "C"  void BoxCollider_set_size_m4101048759 (BoxCollider_t22920061 * __this, Vector3_t2243707580  ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::INTERNAL_get_pixelRect(UnityEngine.Rect&)
 extern "C"  void Camera_INTERNAL_get_pixelRect_m1785951490 (Camera_t189460977 * __this, Rect_t3681755626 * ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-extern "C"  void Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772 (RuntimeObject * __this /* static, unused */, Camera_t189460977 * ___self0, Vector3_t2243707580 * ___position1, Vector3_t2243707580 * ___value2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-extern "C"  void Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934 (RuntimeObject * __this /* static, unused */, Camera_t189460977 * ___self0, Vector3_t2243707580 * ___position1, Vector3_t2243707580 * ___value2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::INTERNAL_CALL_ScreenToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
 extern "C"  void Camera_INTERNAL_CALL_ScreenToViewportPoint_m529506484 (RuntimeObject * __this /* static, unused */, Camera_t189460977 * ___self0, Vector3_t2243707580 * ___position1, Vector3_t2243707580 * ___value2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::INTERNAL_CALL_ScreenPointToRay(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Ray&)
@@ -20845,64 +20841,6 @@ extern "C"  int32_t Camera_get_targetDisplay_m835278314 (Camera_t189460977 * __t
 	_il2cpp_icall_func = (Camera_get_targetDisplay_m835278314_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_targetDisplay()");
 	int32_t retVal = _il2cpp_icall_func(__this);
 	return retVal;
-}
-// UnityEngine.Vector3 UnityEngine.Camera::WorldToViewportPoint(UnityEngine.Vector3)
-extern "C"  Vector3_t2243707580  Camera_WorldToViewportPoint_m1897251752 (Camera_t189460977 * __this, Vector3_t2243707580  ___position0, const RuntimeMethod* method)
-{
-	Vector3_t2243707580  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t2243707580  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	{
-		Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772(NULL /*static, unused*/, __this, (&___position0), (&V_0), /*hidden argument*/NULL);
-		Vector3_t2243707580  L_0 = V_0;
-		V_1 = L_0;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		Vector3_t2243707580  L_1 = V_1;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-extern "C"  void Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772 (RuntimeObject * __this /* static, unused */, Camera_t189460977 * ___self0, Vector3_t2243707580 * ___position1, Vector3_t2243707580 * ___value2, const RuntimeMethod* method)
-{
-	typedef void (*Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772_ftn) (Camera_t189460977 *, Vector3_t2243707580 *, Vector3_t2243707580 *);
-	static Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Camera_INTERNAL_CALL_WorldToViewportPoint_m2345976772_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)");
-	_il2cpp_icall_func(___self0, ___position1, ___value2);
-}
-// UnityEngine.Vector3 UnityEngine.Camera::ViewportToWorldPoint(UnityEngine.Vector3)
-extern "C"  Vector3_t2243707580  Camera_ViewportToWorldPoint_m3841010930 (Camera_t189460977 * __this, Vector3_t2243707580  ___position0, const RuntimeMethod* method)
-{
-	Vector3_t2243707580  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t2243707580  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	{
-		Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934(NULL /*static, unused*/, __this, (&___position0), (&V_0), /*hidden argument*/NULL);
-		Vector3_t2243707580  L_0 = V_0;
-		V_1 = L_0;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		Vector3_t2243707580  L_1 = V_1;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-extern "C"  void Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934 (RuntimeObject * __this /* static, unused */, Camera_t189460977 * ___self0, Vector3_t2243707580 * ___position1, Vector3_t2243707580 * ___value2, const RuntimeMethod* method)
-{
-	typedef void (*Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934_ftn) (Camera_t189460977 *, Vector3_t2243707580 *, Vector3_t2243707580 *);
-	static Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Camera_INTERNAL_CALL_ViewportToWorldPoint_m3505854934_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)");
-	_il2cpp_icall_func(___self0, ___position1, ___value2);
 }
 // UnityEngine.Vector3 UnityEngine.Camera::ScreenToViewportPoint(UnityEngine.Vector3)
 extern "C"  Vector3_t2243707580  Camera_ScreenToViewportPoint_m2666228286 (Camera_t189460977 * __this, Vector3_t2243707580  ___position0, const RuntimeMethod* method)

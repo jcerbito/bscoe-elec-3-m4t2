@@ -113,8 +113,6 @@ UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
 UnityEngine.Camera::INTERNAL_CALL_ScreenPointToRay
 UnityEngine.Camera::INTERNAL_CALL_ScreenToViewportPoint
-UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint
-UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint
 UnityEngine.Camera::INTERNAL_get_pixelRect
 UnityEngine.Camera::get_main
 UnityEngine.Camera::get_clearFlags
@@ -511,7 +509,6 @@ UnityEngine.Time::get_unscaledTime
 UnityEngine.Transform::IsChildOf
 UnityEngine.Transform::get_childCount
 UnityEngine.Transform::INTERNAL_CALL_InverseTransformPoint
-UnityEngine.Transform::INTERNAL_CALL_TransformDirection
 UnityEngine.Transform::INTERNAL_CALL_TransformPoint
 UnityEngine.Transform::INTERNAL_get_localPosition
 UnityEngine.Transform::INTERNAL_get_localRotation

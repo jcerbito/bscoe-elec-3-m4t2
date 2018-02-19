@@ -538,14 +538,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_INTERNAL_CALL_ScreenToViewportPoint();
 		Register_UnityEngine_Camera_INTERNAL_CALL_ScreenToViewportPoint();
 
-		//System.Void UnityEngine.Camera::INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-		void Register_UnityEngine_Camera_INTERNAL_CALL_ViewportToWorldPoint();
-		Register_UnityEngine_Camera_INTERNAL_CALL_ViewportToWorldPoint();
-
-		//System.Void UnityEngine.Camera::INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-		void Register_UnityEngine_Camera_INTERNAL_CALL_WorldToViewportPoint();
-		Register_UnityEngine_Camera_INTERNAL_CALL_WorldToViewportPoint();
-
 		//System.Void UnityEngine.Camera::INTERNAL_get_pixelRect(UnityEngine.Rect&)
 		void Register_UnityEngine_Camera_INTERNAL_get_pixelRect();
 		Register_UnityEngine_Camera_INTERNAL_get_pixelRect();
@@ -2357,10 +2349,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::INTERNAL_CALL_InverseTransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
 		Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
-
-		//System.Void UnityEngine.Transform::INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
-		void Register_UnityEngine_Transform_INTERNAL_CALL_TransformDirection();
-		Register_UnityEngine_Transform_INTERNAL_CALL_TransformDirection();
 
 		//System.Void UnityEngine.Transform::INTERNAL_CALL_TransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_CALL_TransformPoint();
