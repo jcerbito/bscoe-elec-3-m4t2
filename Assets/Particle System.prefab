@@ -50,10 +50,6 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 0.8
   simulationSpeed: 1
-<<<<<<< HEAD
-  stopAction: 0
-=======
->>>>>>> + Additional Playe collision on obstacles
   looping: 0
   prewarm: 0
   playOnAwake: 1
@@ -104,11 +100,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-<<<<<<< HEAD
-  randomSeed: -82450569
-=======
   randomSeed: 1512207092
->>>>>>> + Additional Playe collision on obstacles
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -1630,54 +1622,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxis: 0
     inWorldSpace: 0
-<<<<<<< HEAD
-    multiplyDragByParticleSize: 1
-    multiplyDragByParticleVelocity: 1
     dampen: 0
-    drag:
-      serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
-      minScalar: 0
-      maxCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 2
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - serializedVersion: 2
-          time: 1
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      minCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 2
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - serializedVersion: 2
-          time: 1
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-=======
-    dampen: 0
->>>>>>> + Additional Playe collision on obstacles
   NoiseModule:
     enabled: 0
     strength:
@@ -2585,12 +2530,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 0
     subEmitters:
-<<<<<<< HEAD
-    - serializedVersion: 2
-      emitter: {fileID: 0}
-=======
     - emitter: {fileID: 0}
->>>>>>> + Additional Playe collision on obstacles
       type: 0
       properties: 0
   LightsModule:
@@ -2970,10 +2910,6 @@ ParticleSystem:
         m_Mode: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-<<<<<<< HEAD
-    colorLabel0: Color
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector0_0:
       serializedVersion: 2
       minMaxState: 0
@@ -3015,10 +2951,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel0_0: X
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector0_1:
       serializedVersion: 2
       minMaxState: 0
@@ -3060,10 +2992,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel0_1: Y
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector0_2:
       serializedVersion: 2
       minMaxState: 0
@@ -3105,10 +3033,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel0_2: Z
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector0_3:
       serializedVersion: 2
       minMaxState: 0
@@ -3150,10 +3074,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel0_3: W
-=======
->>>>>>> + Additional Playe collision on obstacles
     mode1: 0
     vectorComponentCount1: 4
     color1:
@@ -3219,10 +3139,6 @@ ParticleSystem:
         m_Mode: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-<<<<<<< HEAD
-    colorLabel1: Color
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector1_0:
       serializedVersion: 2
       minMaxState: 0
@@ -3264,10 +3180,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel1_0: X
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector1_1:
       serializedVersion: 2
       minMaxState: 0
@@ -3309,10 +3221,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel1_1: Y
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector1_2:
       serializedVersion: 2
       minMaxState: 0
@@ -3354,10 +3262,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel1_2: Z
-=======
->>>>>>> + Additional Playe collision on obstacles
     vector1_3:
       serializedVersion: 2
       minMaxState: 0
@@ -3399,10 +3303,6 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-<<<<<<< HEAD
-    vectorLabel1_3: W
-=======
->>>>>>> + Additional Playe collision on obstacles
 --- !u!199 &199695368954464328
 ParticleSystemRenderer:
   serializedVersion: 4
@@ -3413,10 +3313,6 @@ ParticleSystemRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-<<<<<<< HEAD
-  m_DynamicOccludee: 1
-=======
->>>>>>> + Additional Playe collision on obstacles
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -3433,10 +3329,6 @@ ParticleSystemRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-<<<<<<< HEAD
-  m_StitchLightmapSeams: 0
-=======
->>>>>>> + Additional Playe collision on obstacles
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
