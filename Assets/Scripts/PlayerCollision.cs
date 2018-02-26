@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerCollision : MonoBehaviour {
 
     [SerializeField] ParticleSystem effect;
-	[SerializeField] float delayTime = 1f;
+	[SerializeField] float delayTime = 0.5f;
 
 	void Start(){
 		effect.Stop();
@@ -19,7 +19,7 @@ public class PlayerCollision : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 		Explode();
-		//Invoke("Restart", delayTime);
+		Invoke("Restart", delayTime);	
 	}
 
 	void Restart(){
