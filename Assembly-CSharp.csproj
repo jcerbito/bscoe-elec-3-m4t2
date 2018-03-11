@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{45296A8C-37BF-DC02-3512-E6AC7126DD01}</ProjectGuid>
+    <ProjectGuid>{ABD44631-D887-72D6-57CB-AAFD48F0139C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,10 +62,16 @@
      <Compile Include="Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
-     <Compile Include="Assets\LoadScene.cs" />
-     <Compile Include="Assets\Player.cs" />
-     <Compile Include="Assets\WaypointCircuit.cs" />
-     <Compile Include="Assets\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Scripts\EnemyCollision.cs" />
+     <Compile Include="Assets\Scripts\HealthSystem.cs" />
+     <Compile Include="Assets\Scripts\HealthSystem2.cs" />
+     <Compile Include="Assets\Scripts\HealthSystem3.cs" />
+     <Compile Include="Assets\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+     <Compile Include="Assets\Scripts\ScoreBoard.cs" />
+     <Compile Include="Assets\Scripts\WaypointCircuit.cs" />
+     <Compile Include="Assets\Scripts\WaypointProgressTracker.cs" />
      <None Include="Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Asset_Imports\PixelMake\CanyonPack\READ ME!.txt" />
  <Reference Include="UnityEngine.UI">

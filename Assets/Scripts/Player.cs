@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 	[SerializeField] float speed = 20f;
     [SerializeField] float maxRangeX = 7f;
     [SerializeField] float maxRangeY = 6f;
+
     [SerializeField] float posPitch = -3f;
     [SerializeField] float conPitch = -15f;
     [SerializeField] float posYaw = 3f;
