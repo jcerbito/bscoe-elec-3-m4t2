@@ -63,9 +63,12 @@
      <Compile Include="Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Scripts\EnemyCollision.cs" />
+     <Compile Include="Assets\Scripts\Health\HealthSystem2.cs" />
+     <Compile Include="Assets\Scripts\Health\HealthSystem3.cs" />
+     <Compile Include="Assets\Scripts\Health\HealthSystem4.cs" />
+     <Compile Include="Assets\Scripts\Health\HealthSystem5.cs" />
+     <Compile Include="Assets\Scripts\Health\HealthSystem6.cs" />
      <Compile Include="Assets\Scripts\HealthSystem.cs" />
-     <Compile Include="Assets\Scripts\HealthSystem2.cs" />
-     <Compile Include="Assets\Scripts\HealthSystem3.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />

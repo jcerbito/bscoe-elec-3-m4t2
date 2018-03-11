@@ -10,8 +10,11 @@ public class EnemyCollision : MonoBehaviour {
 	[SerializeField] GameObject bull;
 	[SerializeField] float delayTime = 2f;
 	[SerializeField] int scorePoint = 5;
-//	[SerializeField] int scoreHit = 3;
+	public AudioSource expFx;
 
+	void Start(){
+		expFx = GetComponent<AudioSource>();
+	}
 
 	void Explode(){
 		effect.Play();
@@ -20,9 +23,6 @@ public class EnemyCollision : MonoBehaviour {
 
 	private void forScore(){
         ScoreBoard.score += scorePoint;
-		//HealthSystem.health = scoreHit;
-		//scoreHit = scoreHit - 1;
-
 		HealthSystem.health = HealthSystem.health - 1;
     }
 
@@ -31,7 +31,7 @@ public class EnemyCollision : MonoBehaviour {
 		if (HealthSystem.health <= 1){
 			HealthSystem.health = 0;
 			Explode();
-		
+			expFx.Play();
 		}
 		
 	}
