@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class EnemyCollision : MonoBehaviour {
@@ -10,6 +11,8 @@ public class EnemyCollision : MonoBehaviour {
 	[SerializeField] GameObject bull;
 	[SerializeField] float delayTime = 0.5f;
 	[SerializeField] int scorePoint = 5;
+	public int hit = 4;
+	public Image healthbar;
 	public AudioSource expFx;
 	
 	
@@ -19,24 +22,19 @@ public class EnemyCollision : MonoBehaviour {
 	}
 
 	void Explode(){
-		
-		effect.Play();
-		Destroy(gameObject, delayTime);
-		
+		if (hit == 0){
+			effect.Play();
+			expFx.Play();
+			Destroy(gameObject, delayTime);
+			ScoreBoard.score += scorePoint;
+
+		}
 	}
 
-	
 	void OnTriggerEnter(Collider bull){
-			HealthSystem.health = HealthSystem.health - 1;
-			if(HealthSystem.health <= 1){
-				HealthSystem.health = 0;
-				if (HealthSystem.health == 0){
-					ScoreBoard.score += scorePoint;
-				}
-				Explode();
-				expFx.Play();
-			}
-			print("asdf");
+			healthbar.fillAmount = healthbar.fillAmount - 0.25f;
+			hit--;
+			Explode();
 	}
 
 
